@@ -19,8 +19,8 @@
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
 		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
-		<property name="username" value="NEW" />
-		<property name="password" value="12345678" />
+		<property name="username" value="SYSTEM" />
+		<property name="password" value="KAVIT1412" />
 	</bean>
 
 	<bean id="jpaVendorAdapter"
@@ -55,18 +55,15 @@
 	</bean>
 
 
-<!--===============================================================================================================================-->
-
 
 	<bean id="user1" class="com.upgrad.hirewheels.practice.User" autowire="byName">
 		<property name="user_id" value="1" />
-		<property name="first_name" value="Shivam" />
-		<property name="last_name" value="Singhal" />
+		<property name="first_name" value="Kavit" />
+		<property name="last_name" value="Shah" />
 		<property name="password" value="12345678" />
-		<property name="email" value="singhal29797shivam@gmail.com" />
-		<property name="mobile_no" value="8650260576" />
+		<property name="email" value="kavitshah14@gmail.com" />
+		<property name="mobile_no" value="9998130422" />
 		<property name="wallet_money" value="100000" />
-		<!--<property name="balanceService" ref="balanceService" />-->
 	</bean>
 
 	<bean id="user2" class="com.upgrad.hirewheels.practice.User">
@@ -84,9 +81,7 @@
 	</bean>
 
 	<bean id="userService" class="com.upgrad.hirewheels.practice.UserService" >
-		<!--<property name="users" ref="user2" />-->
 	</bean>
-<!--===============================================================================================================================-->
 
 </beans>
 
